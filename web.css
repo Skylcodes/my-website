@@ -1,0 +1,150 @@
+* {
+padding: 0;
+margin: 0;
+
+}
+
+.header {
+
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/ok.ng);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: 'Caveat', cursive;
+
+
+
+}
+
+nav {
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+
+}
+
+.nav-links {
+
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+
+}
+.nav-links ul li a{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+}
+a{
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+
+    width: 100%;
+
+
+
+}
+a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: orange;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+a:hover::after{
+    width: 100%;
+
+}
+
+.textbox{
+    width: 90%;
+    color:red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textbox h1{
+    font-size: 2rem;
+
+}
+.textbox p{
+    margin: 10px 0 40px;
+    font-size: 1rem;
+
+}
+nav .fa{
+    display: none;
+
+}
+@media(max-width: 700px){
+    .textbox h1{
+        font-size: 20px;
+    
+    }
+    .nav-links ul li {
+        display: block;
+    
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 1rem;
+        cursor: pointer;
+
+    }
+
+
+}
+
+
+.textbox p {
+
+
+    font-size: 2rem;
+
+
+}
